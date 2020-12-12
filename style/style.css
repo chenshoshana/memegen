@@ -1,0 +1,165 @@
+                body {
+                    background-image: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%)
+                }
+                /* HOME-PAGE */
+                
+                header {
+                    background-color: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%);
+                    width: 100%;
+                    height: 73px;
+                    background-color: #5970c1;
+                    border-radius: 37px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .head-btns {
+                    padding: 1rem;
+                }
+                
+                .img-filter {
+                    display: none;
+                }
+                
+                .logo {
+                    height: 80%;
+                    padding: 0.5rem 0 0 2rem
+                }
+                
+                .head-btns {
+                    display: flex;
+                    justify-content: end;
+                }
+                
+                .head-btn {
+                    width: 116px;
+                    height: 40px;
+                    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+                    border-radius: 20px;
+                    background-color: #fefefe;
+                    cursor: pointer;
+                    text-align: center;
+                }
+                
+                .gallery-container {
+                    display: none;
+                    grid-template-columns: repeat(auto-fill, minmax(70px, 150px));
+                    grid-template-rows: 150px;
+                    grid-gap: 10px;
+                    padding: 1.25rem;
+                }
+                
+                .img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+                /* WHEN GALLERY CLICKED ON: */
+                /* WHEN IMG CLICKED */
+                
+                .align-txt {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 1fr 1fr;
+                    column-gap: 30px;
+                }
+                
+                .btn-txt {
+                    background-color: lightgray;
+                    width: 60px;
+                    height: 60px;
+                    border: solid 1px;
+                }
+                
+                .btn-txt[type="color"] {
+                    box-sizing: border-box;
+                }
+                
+                .btn:hover {
+                    background-color: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%);
+                    border: solid 3px;
+                }
+                
+                .box-container {
+                    margin: auto;
+                    display: none;
+                    padding: 1.25rem;
+                }
+                
+                .editor-container {
+                    display: flex;
+                    flex-direction: column;
+                    /* padding: 11rem 0 0 1.25rem; */
+                    transform: scale(1.4) translateY(25%) translateX(50%);
+                }
+                
+                canvas {
+                    background-color: white;
+                }
+                
+                .color-pik {
+                    display: none;
+                }
+                
+                footer {
+                    width: 100vh;
+                    margin-left: 40%;
+                }
+                
+                .footer-logo {
+                    height: 20px;
+                    padding: 0.5rem 0 0 2rem
+                }
+                /* responsive */
+                
+                @media(min-width: 600px) {}
+                
+                @media(max-width: 930px) {
+                    .box-container {
+                        display: none;
+                        flex-direction: column;
+                    }
+                    .editor-container {
+                        padding: 2rem 1.25rem 0 1.25rem;
+                        transform: initial;
+                    }
+                    .btn {
+                        background-color: lightgray;
+                        width: 70px;
+                        height: 70px;
+                    }
+                    .align-txt {
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-rows: 1fr;
+                        column-gap: 0.5rem;
+                    }
+                    .logo {
+                        height: 80%;
+                        padding: 0.3rem 0 0 2rem
+                    }
+                    header {
+                        height: 50px;
+                    }
+                    .head-btns {
+                        padding: 0.3rem;
+                    }
+                    footer {
+                        width: 100vh;
+                        margin-left: 20%;
+                    }
+                }
+                
+                @media(max-width: 1500px) {
+                    .gallery-container {
+                        display: none;
+                        grid-template-columns: repeat(auto-fill, minmax(70px, 100px));
+                        grid-template-rows: 100px;
+                        grid-gap: 5px;
+                    }
+                    footer {
+                        width: 100vh;
+                        margin-left: 40%;
+                    }
+                    .editor-container {
+                        transform: initial;
+                    }
+                }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEME GENERATOR</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="onInit()">
+    <header class="header">
+        <img src="/img/LOGO/LOGO.png" class="logo"></img>
+        <nav class="header">
+            <div class="head-btns">
+                <select class="img-filter head-btn" onchange="onImgFilter(this)">
+                <option value="all">all</option>
+                <option value="laughing">laughing</option>
+                <option value="angry">angry</option>
+                <option value="movie">movie</option>
+                <option value="sad">sad</option>
+                <option value="happy">happy</option>
+                <option value="babies">babies</option>
+                <option value="animals">animals</option>  
+                <option value="putin">putin</option>
+            </select>
+                <button class="head-btn" onclick="onGalleryClicked()">gallery</button>
+                <button class="head-btn" href="#">about</button>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="gallery-container">
+
+    </div>
+
+    <div class="box-container">
+
+    </div>
+
+    <footer>
+        <a class="copy-rights">copy rights</a>
+        <img src="/img/LOGO/LOGO.png" class="footer-logo"></img>
+    </footer>
+
+    <script src="js/meme-service.js"></script>
+    <script src="js/gallery-service.js"></script>
+    <script src="js/meme-controller.js"></script>
+    <script src="js/gallery-controller.js"></script>
+</body>
+
+</html>
